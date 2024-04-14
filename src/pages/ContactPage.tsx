@@ -8,6 +8,8 @@ import {observer} from "mobx-react-lite";
 import {contactsStore} from "src/mobx/contactsStore";
 
 
+// test commit
+
 export const ContactPage = observer(() => {
     const {contactId} = useParams<{ contactId: string }>();
 
@@ -23,6 +25,7 @@ export const ContactPage = observer(() => {
             <Col className={'mx-auto'}>
                 {contactsStore.oneContact ? <ContactCard contact={contactsStore.oneContact} /> : <Empty />}
             </Col>
+
         </Row>
     );
 })
